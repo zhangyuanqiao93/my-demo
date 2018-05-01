@@ -1,7 +1,8 @@
 /**
  * Author: Bridge
  * Date: 2018/4/30 00:26
- * Function: 查看线程是否存活
+ * Function: 1.查看线程是否存活
+ * 2.获取当前进程的名称
  */
 public class TwoThreadAlive extends Thread{
 
@@ -23,7 +24,7 @@ public class TwoThreadAlive extends Thread{
 
     public static void main(String[] args) {
         TwoThreadAlive tt = new TwoThreadAlive();
-        tt.setName("Thread");
+        //tt.setName("Thread");
         System.out.println("before start(), tt.isAlive() = " + tt.isAlive());
         tt.start();
         System.out.println("just after start(), tt.isAlive() = " + tt.isAlive());
